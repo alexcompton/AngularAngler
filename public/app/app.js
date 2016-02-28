@@ -1,1 +1,1 @@
-angular.module('myApp', ['app.routes', 'mainCtrl']);
+angular.module('angular-angler', ['app.routes', 'mainCtrl']);

@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Workflow!</title>
-	
-	<!-- For Angular Routing -->
-	<base href='/'>
+    <meta charset="UTF-8">
+    <title>Angular Angler</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- For Angular Routing -->
+    <base href='/'>
 
-	<!-- JS / LIBS -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
-
-	<!-- APP -->
-	<script src="app/controllers/mainCtrl.js"></script>
-	<script src="app/app.routes.js"></script>
-	<script src="app/app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="container" ng-app="myApp" ng-controller="mainController as main">
 
-	<div class="jumbotron text-center">
-		<h1>{{ main.message }}</h1>
-	</div>
+<!--Body of the page-->
 
-	<div ng-view></div>
-	
+<body ng-app="angular-angler" ng-controller="mainController as main">
+
+    <!--Navbar through each page-->
+    <header>
+        <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand"><span class="fa fa-anchor"></span> Fishing Florida</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/spots"><span></span>Spots</a></li>
+                    <li><a href="/weather"><span></span>Weather</a></li>
+                    <li><a href="/fishId"><span></span>Fish Id</a></li>
+                    <li><a href="/Blog"><span></span>Blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/logout">Login</a></li>
+                    <li><a href="/join">Become a Member!</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--The pages go here-->
+    <main class="container">
+
+        <!--Angular Views Go Here-->
+        <div ng-view></div>
+
+        <!--Footer -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2014 Florida Fishing, Inc. &middot; <a href="terms.html">Terms</a></p>
+        </footer>
+
+    </main>
+
+    <!--Scripts to be used in the page-->
+    <!-- JS / LIBS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
+
+    <!-- APP -->
+    <!--Controllers-->
+    <script src="app/controllers/mainCtrl.js"></script>
+
+    <!--Services-->
+
+    <!--main angular app files-->
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.js"></script>
 </body>
+
 </html>
