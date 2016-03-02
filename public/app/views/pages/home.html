@@ -1,76 +1,92 @@
-<div class="jumbotron text-center">
-    <h1>Fishing Homepage</h1>
+<div>
+    <uib-carousel active="active" interval="interval" no-wrap="noWrapSlides" template-url="app/views/pages/carousel/carousel.html">
+        <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" template-url="app/views/pages/carousel/slide.html">
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <div class="carousel-caption">
+                <h4>{{slide.header}}</h4>
+                <p>{{slide.text}}</p>
+            </div>
+        </uib-slide>
+    </uib-carousel>
 </div>
 
 <hr class="featurette-divider">
 
-      <!-- fishing spots and weather -->     
-      <div class="row featurette">
-        <div class="col-md-5">
-          <a href="spots.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/spot.png"></a>
-        </div>
-        <div class="col-md-7">
-            <h2 class="featurette-heading"><a href="spots.html" style="text-decoration: none">Fishing Spots</a> <span class="text-muted"> and Weather</span></h2>
-          <p class="lead">Grab your gear, we're going fishing. Fishing spots, weather, swag, oh my! Well help you find where to go, what you need, and where to buy it! Type in your city we can find you local charters, fishing holes, bait shops, and sporting goods stores. Well also find your local weather and help give you a few suggestions on things to remember for your tackle box! </p>
-        </div>
-      </div>
+<!-- fishing spots and weather -->
+<div class="row featurette">
+    <div class="col-md-5">
+        <a href="spots.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/spot.png"></a>
+    </div>
+    <div class="col-md-7">
+        <h2 class="featurette-heading"><a href="spots.html" style="text-decoration: none">Fishing Spots</a> <span class="text-muted"> and Weather</span></h2>
+        <p class="lead">Grab your gear, we're going fishing. Fishing spots, weather, swag, oh my! Well help you find where to go, what you
+            need, and where to buy it! Type in your city we can find you local charters, fishing holes, bait shops, and sporting
+            goods stores. Well also find your local weather and help give you a few suggestions on things to remember for
+            your tackle box! </p>
+    </div>
+</div>
 
-      <hr class="featurette-divider">
-      
-      <!-- First Page -->
+<hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><a href="alvaro.html" style="text-decoration: none">Fishing Research</a> <span class="text-muted">for all your fishing knowledge</span></h2>
-          <p class="lead">Before you go out and fish, shouldn't you know what you want to get? Well look no further! Visit the research page to answer all your Florida fishing questions.</p>
-        </div>
-        <div class="col-md-5">
-          <a href="alvaro.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/floridapagetop.jpg" alt="Generic placeholder image"></a>
-        </div>
-      </div>
+<!-- First Page -->
 
-      <hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading"><a href="alvaro.html" style="text-decoration: none">Fishing Research</a> <span class="text-muted">for all your fishing knowledge</span></h2>
+        <p class="lead">Before you go out and fish, shouldn't you know what you want to get? Well look no further! Visit the research page
+            to answer all your Florida fishing questions.</p>
+    </div>
+    <div class="col-md-5">
+        <a href="alvaro.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/floridapagetop.jpg" alt="Generic placeholder image"></a>
+    </div>
+</div>
 
-      <!-- 2nd Page -->
-      
-      <div class="row featurette">
-        <div class="col-md-5">
-          <a href="kevin.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/funny-fish.jpg" alt="Generic placeholder image"></a>
-        </div>
-        <div class="col-md-7">
-            <h2 class="featurette-heading"><a href="kevin.html" style="text-decoration: none">Jokes</a> <span class="text-muted"> of the fishing kind.</span></h2>
-          <p class="lead">We have so many jokes! Tiny fish jokes, big fish jokes, jokes that in season, jokes that are out of season, and so many more!</p>
-        </div>
-      </div>
+<hr class="featurette-divider">
 
-      <hr class="featurette-divider">
-      
-      <!-- Tides -->
-      
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><a href="ibrahim.html" style="text-decoration: none">Tides...</a><span class="text-muted"> plan for them</span></h2>
-          <p class="lead">Did you know that fish are active depending on the tides? Some fish like to come out at night, while others like the day. Some like low tides while others high tide. Be prepared! Look up when the fish are out so you don't get stuck catching nothing!</p>
-        </div>
-        <div class="col-md-5">
-            <a href="ibrahim.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/tide.jpg" alt="Generic placeholder image"></a>
-        </div>
-      </div>
+<!-- 2nd Page -->
 
-      <hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-5">
+        <a href="kevin.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/funny-fish.jpg" alt="Generic placeholder image"></a>
+    </div>
+    <div class="col-md-7">
+        <h2 class="featurette-heading"><a href="kevin.html" style="text-decoration: none">Jokes</a> <span class="text-muted"> of the fishing kind.</span></h2>
+        <p class="lead">We have so many jokes! Tiny fish jokes, big fish jokes, jokes that in season, jokes that are out of season, and so
+            many more!</p>
+    </div>
+</div>
 
-      <!-- Blog -->
-      
-      <div class="row featurette">
-        <div class="col-md-5">
-          <a href="blog.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/SpeakFish.png" alt="Generic placeholder image"></a>
-        </div>
-        <div class="col-md-7">
-            <h2 class="featurette-heading"><a href="blog.html" style="text-decoration: none">Blog</a> <span class="text-muted"> Post and Catch</span></h2>
-          <p class="lead">Theres plenty of fish in the sea, show all your fishing friends that you got the biggest catch! Share techniques, ask questions, and share spots (except for that secret one).</p>
-        </div>
-      </div>
+<hr class="featurette-divider">
 
-      <hr class="featurette-divider">
+<!-- Tides -->
 
-      <!-- /END THE FEATURETTES -->
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading"><a href="ibrahim.html" style="text-decoration: none">Tides...</a><span class="text-muted"> plan for them</span></h2>
+        <p class="lead">Did you know that fish are active depending on the tides? Some fish like to come out at night, while others like
+            the day. Some like low tides while others high tide. Be prepared! Look up when the fish are out so you don't
+            get stuck catching nothing!</p>
+    </div>
+    <div class="col-md-5">
+        <a href="ibrahim.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/tide.jpg" alt="Generic placeholder image"></a>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<!-- Blog -->
+
+<div class="row featurette">
+    <div class="col-md-5">
+        <a href="blog.html"><img style="border:0;" class="featurette-image img-responsive" src="assets/img/home/SpeakFish.png" alt="Generic placeholder image"></a>
+    </div>
+    <div class="col-md-7">
+        <h2 class="featurette-heading"><a href="blog.html" style="text-decoration: none">Blog</a> <span class="text-muted"> Post and Catch</span></h2>
+        <p class="lead">Theres plenty of fish in the sea, show all your fishing friends that you got the biggest catch! Share techniques,
+            ask questions, and share spots (except for that secret one).</p>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->
