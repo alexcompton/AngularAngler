@@ -1,1 +1,6 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.jumbo-text
+{
+    text-shadow: 0 -1px black, 0 1px black, 1px 0 black, 0 -1px black;
+}

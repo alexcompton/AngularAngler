@@ -27,13 +27,13 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="/spots"><span></span>Spots</a></li>
-                    <li><a href="/weather"><span></span>Weather</a></li>
                     <li><a href="/fishId"><span></span>Fish Id</a></li>
+                    <li><a href="/tides"><span></span>Tides</a></li>
                     <li><a href="/Blog"><span></span>Blog</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/login">Login</a></li>
-                    <li><a href="/logout">Login</a></li>
+                    <li><a href="/logout">Logout</a></li>
                     <li><a href="/join">Become a Member!</a></li>
                 </ul>
             </div>
@@ -46,10 +46,12 @@
         <!--Angular Views Go Here-->
         <div ng-view></div>
 
-        <!--Footer -->
+        <!--Footer -->    
+        <hr class="featurette-divider">
+        
         <footer>
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2014 Florida Fishing, Inc. &middot; <a href="terms.html">Terms</a></p>
+            <p class="pull-right"><a href="/terms">Terms and Conditions</a></p>
+            <p>&copy; 2014 Florida Fishing, Inc.</p>
         </footer>
 
     </main>
@@ -65,6 +67,10 @@
     <!-- APP -->
     <!--Controllers-->
     <script src="app/controllers/mainCtrl.js"></script>
+    <script src="app/controllers/home/homeCtrl.js"></script>
+    <script src="app/controllers/home/jumboCtrl.js"></script>
+    <script src="app/controllers/home/featuretteCtrl.js"></script>
+    <script src="app/controllers/termsCtrl.js"></script>
 
     <!--Services-->
 

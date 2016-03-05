@@ -9,6 +9,13 @@ angular.module('app.routes', ['ngRoute'])
 			templateUrl : 'app/views/pages/home.html',
 			controller  : 'mainController',
 			controllerAs: 'main'
+		})
+        
+        // terms and conditions route
+        .when('/terms', {
+			templateUrl : 'app/views/pages/terms.html',
+			controller  : 'termsController',
+			controllerAs: 'terms'
 		});
 
 	$locationProvider.html5Mode(true);

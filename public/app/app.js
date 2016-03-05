@@ -1,1 +1,8 @@
-angular.module('angular-angler', ['app.routes', 'mainCtrl', 'ui.bootstrap']);
+angular.module('angular-angler', 
+    ['app.routes',
+    'mainCtrl',
+    'ui.bootstrap',
+    'homeCtrl',
+    'jumboCtrl',
+    'featuretteCtrl',
+    'termsCtrl']);
