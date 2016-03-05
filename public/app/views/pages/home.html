@@ -5,12 +5,12 @@
             <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" template-url="app/views/pages/carousel/slide.html">
                 <img ng-src="{{slide.image}}" style="margin:auto;">
                 <div class="carousel-caption">
-                    <h4 class="jumbo-text">
-                    {{ slide.header }}
-                </h4>
-                    <p class="jumbo-text">
+                    <h1 class="jumbo-text">
+                        {{ slide.header }}
+                    </h1>
+                    <h3 class="jumbo-text">
                         {{ slide.text }}
-                    </p>
+                    </h3>
                 </div>
             </uib-slide>
         </uib-carousel>
@@ -18,9 +18,9 @@
 
     <div ng-controller="featuretteController">
         <div ng-repeat="feat in featurettes">
-            
+
             <hr class="featurette-divider">
-            
+
             <div class="row featurette">
                 <div class="col-md-5">
                     <a href="{{feat.link}}">
@@ -35,8 +35,8 @@
                     <p class="lead">{{feat.message}}</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
-    
+
 </div>
