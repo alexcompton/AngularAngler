@@ -5,4 +5,8 @@ angular.module('angular-angler',
     'homeCtrl',
     'jumboCtrl',
     'featuretteCtrl',
-    'termsCtrl']);
+    'termsCtrl',
+    'spotsCtrl',
+    'fishIdCtrl',
+    'tidesCtrl',
+    'blogCtrl']);
