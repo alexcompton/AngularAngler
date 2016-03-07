@@ -9,4 +9,6 @@ angular.module('angular-angler',
     'spotsCtrl',
     'fishIdCtrl',
     'tidesCtrl',
-    'blogCtrl']);
+    'blogCtrl',
+    'mapService',
+    'geolocation']);

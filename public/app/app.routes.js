@@ -22,7 +22,7 @@ angular.module('app.routes', ['ngRoute'])
         .when('/spots', {
 			templateUrl : 'app/views/pages/spots.html',
 			controller  : 'spotsController',
-			controllerAs: 'spots'
+			controllerAs: 'spots',
 		})
         
         // fish id route

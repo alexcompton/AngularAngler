@@ -33,6 +33,10 @@ mongoose.connect(config.database);
 // configure public assets folder
 app.use(express.static(__dirname + '/public'));
 
+// bower components
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+
+
 // route to send index.html
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/app/views/index.html'));
