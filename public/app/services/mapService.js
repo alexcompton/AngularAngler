@@ -8,6 +8,7 @@ angular.module('mapService', [])
         // Selected Location (initialize to center of America)
         var selectedLat = 27.937279;
         var selectedLong = -82.498325;
+        var lastMarker = {};
         
         // Refresh the Map with new data. Function will take new latitude and longitude coordinates.
         mapService.refresh = function (latitude, longitude) {
@@ -40,13 +41,14 @@ angular.module('mapService', [])
             var initialLocation = new google.maps.LatLng(latitude, longitude);
             var marker = new google.maps.Marker({
                 position: initialLocation,
-                animation: google.maps.Animation.BOUNCE,
                 map: map,
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
             });
-            lastMarker = marker;
 
+            lastMarker = marker;
         };
+        
+
         
         // Refresh the page upon window load. Use the initial latitude and longitude
         google.maps.event.addDomListener(window, 'load',

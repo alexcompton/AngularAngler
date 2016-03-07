@@ -6,6 +6,9 @@ angular.module('spotsCtrl', ['geolocation', 'mapService'])
 
         $scope.formData = {};
         
+        // use this
+        var coords = {};
+        
         // Get User's actual coordinates based on HTML5 at window load
         geolocation.getLocation().then(function (data) {
 
