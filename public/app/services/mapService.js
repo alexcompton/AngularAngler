@@ -6,8 +6,8 @@ angular.module('mapService', [])
         var mapService = {}; 
         
         // Selected Location (initialize to center of America)
-        var selectedLat = 39.50;
-        var selectedLong = -98.35;
+        var selectedLat = 27.937279;
+        var selectedLong = -82.498325;
         
         // Refresh the Map with new data. Function will take new latitude and longitude coordinates.
         mapService.refresh = function (latitude, longitude) {
@@ -21,7 +21,7 @@ angular.module('mapService', [])
         };
         
         // Initializes the map
-        var initialize = function (selectedLat, selectedLong) {
+        var initialize = function (latitude, longitude) {
 
             // Uses the selected lat, long as starting point
             var myLatLng = { lat: selectedLat, lng: selectedLong };
@@ -31,13 +31,13 @@ angular.module('mapService', [])
 
                 // Create a new map and place in the index.html page
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 3,
+                    zoom: 12,
                     center: myLatLng
                 });
             }
             
             // Set initial location as a bouncing red marker
-            var initialLocation = new google.maps.LatLng(selectedLat, selectedLong);
+            var initialLocation = new google.maps.LatLng(latitude, longitude);
             var marker = new google.maps.Marker({
                 position: initialLocation,
                 animation: google.maps.Animation.BOUNCE,
