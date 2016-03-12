@@ -74,15 +74,6 @@ angular.module('mapService', [])
                     map: map,
                     position: place.geometry.location,
                     icon: "assets/img/fish-icon.png"
-                    // {
-                    //     // custom fish icon
-                    //     path: 'M -8,0 -6,4 0,6 6,6 10,4 12,2 14,4 16,6 16,-6 14,-4 12,-2 10,-4 6,-6 0,-6 -4,-6 z',
-                    //     fillColor: '#E65C00',
-                    //     fillOpacity: 1,
-                    //     scale: 1,
-                    //     strokeColor: '#000000',
-                    //     strokeWeight: 1
-                    // }
                 });
 
                 google.maps.event.addListener(marker, 'click', function() {
