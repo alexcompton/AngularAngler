@@ -17,4 +17,8 @@ angular.module('spotsCtrl', ['geolocation', 'mapService'])
 
             mapService.refresh(data.coords.latitude, data.coords.longitude);
         });
+        
+        $scope.search = function() {
+            window.alert($scope.formData.location);
+        };
     });
