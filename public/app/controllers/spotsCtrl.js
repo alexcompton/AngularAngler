@@ -20,5 +20,6 @@ angular.module('spotsCtrl', ['geolocation', 'mapService'])
         
         $scope.search = function() {
             window.alert($scope.formData.location);
+            mapService.search();
         };
     });

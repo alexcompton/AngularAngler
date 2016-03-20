@@ -1,6 +1,6 @@
 <div ng-controller="homeController">
 
-    <div ng-controller="jumboController">
+    <div ng-controller="jumboController" >
         <uib-carousel active="active" interval="interval" no-wrap="noWrapSlides" template-url="app/views/pages/carousel/carousel.html">
             <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" template-url="app/views/pages/carousel/slide.html">
                 <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -22,11 +22,13 @@
             <hr class="featurette-divider">
 
             <div class="row featurette">
+                
                 <div class="col-md-5">
                     <a href="{{feat.link}}">
                         <img style="border:0;" class="featurette-image img-responsive" src="{{feat.img}}">
                     </a>
                 </div>
+                
                 <div class="col-md-7">
                     <h2 class="featurette-heading">
                         <a href="{{feat.link}}" style="text-decoration: none">{{feat.bigTitle}}</a> 

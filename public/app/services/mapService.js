@@ -11,6 +11,8 @@ angular.module('mapService', [])
         var lastMarker = {};
         var service;
         var infowindow;
+        
+        var map = {};
 
         // Refresh the Map with new data. Function will take 
         // new latitude and longitude coordinates.
